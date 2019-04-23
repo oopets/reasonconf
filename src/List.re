@@ -14,10 +14,8 @@ let gradient =
   );
 
 let getElements = (places: array(Resto.resto), term: string) => {
-  // Js.log2(Resto.search(places, term), term)
   Resto.search(places, term)
   ->Belt.Array.map(p => {
-      Js.log(p.img.url);
       let liStyle =
         ReactDOMRe.Style.make(
           ~backgroundImage="url(" ++ p.img.url ++ ")",
