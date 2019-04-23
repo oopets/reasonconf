@@ -5,6 +5,14 @@ var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
 var List$ReactHooksTemplate = require("./List.bs.js");
 
+var style = {
+  border: "2px solid mediumaquamarine",
+  color: "mediumaquamarine",
+  fontSize: "20px",
+  padding: "10px",
+  borderRadius: "6px"
+};
+
 function App(Props) {
   var match = React.useState((function () {
           return "";
@@ -13,6 +21,7 @@ function App(Props) {
   var term = match[0];
   return React.createElement(React.Fragment, undefined, React.createElement("div", undefined, React.createElement("input", {
                       id: "search",
+                      style: style,
                       placeholder: "Dude, just start typing!",
                       value: term,
                       onChange: (function ($$event) {
@@ -25,5 +34,6 @@ function App(Props) {
 
 var make = App;
 
+exports.style = style;
 exports.make = make;
 /* react Not a pure module */

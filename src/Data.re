@@ -77,5 +77,4 @@ module Resto = {
 
   let search = (places, str: string) =>
     Belt.Array.keep(places, p => Js.String.includes(str, p.name));
-  /*search(places, "che")->Belt.Array.map(p => p.name)|>Js.log;*/
 };
