@@ -26,7 +26,7 @@ var places = /* array */[
     /* name */"Très Branché",
     /* desc */"French modern cuisine",
     /* img : record */[
-      /* url */"https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/10750410_1514324315519572_5477618609869746935_o.jpg?_nc_cat=106&_nc_ht=scontent-vie1-1.xx&oh=4eb18f9c6278a04413862cc6a8a9d0a3&oe=5D472B7E",
+      /* url */"https://media-cdn.tripadvisor.com/media/photo-s/07/cb/9c/df/tres-branche.jpg",
       /* attr */"(c) Tr\xc3\xa8s Branch\xc3\xa9",
       /* attrUrl */"Does not matter"
     ],

@@ -13,16 +13,28 @@ var imgStyle = {
   width: "auto"
 };
 
+var gradient = {
+  backgroundImage: "linear-gradient(grey, transparent)",
+  height: "100%",
+  padding: "20px 0 0 20px",
+  width: "100%"
+};
+
 function getElements(places, term) {
   return Belt_Array.map(Data$ReactHooksTemplate.Resto[/* search */1](places, term), (function (p) {
+                console.log(p[/* img */3][/* url */0]);
+                var liStyle = {
+                  backgroundImage: "url(" + (p[/* img */3][/* url */0] + ")"),
+                  backgroundPosition: "center"
+                };
                 var match = p[/* img */3][/* attrUrl */2];
                 return React.createElement("li", {
-                            key: p[/* id */0]
-                          }, React.createElement("img", {
-                                style: imgStyle,
-                                title: match !== undefined ? match : "No attribution",
-                                src: p[/* img */3][/* url */0]
-                              }), p[/* name */1]);
+                            key: p[/* id */0],
+                            style: liStyle,
+                            title: match !== undefined ? match : "No attribution"
+                          }, React.createElement("span", {
+                                style: gradient
+                              }, p[/* name */1]));
               }));
 }
 
@@ -43,6 +55,7 @@ var make = List;
 
 exports.places = places;
 exports.imgStyle = imgStyle;
+exports.gradient = gradient;
 exports.getElements = getElements;
 exports.headerStyle = headerStyle;
 exports.make = make;

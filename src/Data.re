@@ -44,7 +44,7 @@ module Resto = {
       name: {j|Très Branché|j},
       desc: "French modern cuisine",
       img: {
-        url: "https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/10750410_1514324315519572_5477618609869746935_o.jpg?_nc_cat=106&_nc_ht=scontent-vie1-1.xx&oh=4eb18f9c6278a04413862cc6a8a9d0a3&oe=5D472B7E",
+        url: "https://media-cdn.tripadvisor.com/media/photo-s/07/cb/9c/df/tres-branche.jpg",
         attr: "(c) Très Branché",
         attrUrl: Some("Does not matter"),
       },

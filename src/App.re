@@ -1,10 +1,10 @@
 let style =
   ReactDOMRe.Style.make(
-    ~border="2px solid mediumaquamarine",
+    ~border="2px solid lightgrey",
     ~borderRadius="6px",
     ~padding="10px",
     ~fontSize="20px",
-    ~color="mediumaquamarine",
+    ~color="#444",
     (),
   );
 

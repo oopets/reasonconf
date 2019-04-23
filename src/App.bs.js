@@ -6,8 +6,8 @@ var React = require("react");
 var List$ReactHooksTemplate = require("./List.bs.js");
 
 var style = {
-  border: "2px solid mediumaquamarine",
-  color: "mediumaquamarine",
+  border: "2px solid lightgrey",
+  color: "#444",
   fontSize: "20px",
   padding: "10px",
   borderRadius: "6px"
